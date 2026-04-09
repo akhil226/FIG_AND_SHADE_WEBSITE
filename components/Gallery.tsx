@@ -3,20 +3,20 @@ import { motion } from 'framer-motion';
 
 // Combining images from both 'img' and 'regenerated images' folders
 const images = [
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.39 PM (1).jpeg", alt: "Retreat View", size: "tall" },
-  { src: "regenerated images/Gemini_Generated_Image_3dtsle3dtsle3dts.png", alt: "Conceptual Design", size: "square" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.40 PM.jpeg", alt: "Serene Exterior", size: "wide" },
-  { src: "regenerated images/Post-processing_overhaul_for_202604081637.jpeg", alt: "Enhanced Vision", size: "tall" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.43 PM.jpeg", alt: "Lush Surroundings", size: "wide" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.44 PM (1).jpeg", alt: "Harmony", size: "square" },
-  { src: "regenerated images/Post-processing_overhaul_for_202604081951.jpeg", alt: "Sunset Glow", size: "tall" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.48 PM.jpeg", alt: "Cosy Cabin Front", size: "wide" },
-  { src: "regenerated images/This_image_needs_202604081634.png", alt: "Architectural Focus", size: "tall" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.49 PM (1).jpeg", alt: "Luxurious Setting", size: "square" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.50 PM.jpeg", alt: "Natural Lighting", size: "tall" },
-  { src: "regenerated images/Post-processing_overhaul_for_202604082027.jpeg", alt: "Finer Details", size: "wide" },
-  { src: "img/WhatsApp Image 2026-04-08 at 3.58.52 PM (1).jpeg", alt: "Dusk Transition", size: "square" },
-  { src: "regenerated images/Post-processing_overhaul_for_202604082002 (1).jpeg", alt: "Night Elegance", size: "tall" }
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.39 PM (1).jpeg", alt: "A panoramic slice of the Wayanad hills.", size: "tall" },
+  { src: "regenerated images/Gemini_Generated_Image_3dtsle3dtsle3dts.png", alt: "Where modern luxury meets untamed nature.", size: "square" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.40 PM.jpeg", alt: "Quiet mornings bathed in the misty mountain air.", size: "wide" },
+  { src: "regenerated images/Post-processing_overhaul_for_202604081637.jpeg", alt: "Architectural grace nested amidst the greenery.", size: "tall" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.43 PM.jpeg", alt: "Immersed deeply in the emerald tropical canopy.", size: "wide" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.44 PM (1).jpeg", alt: "A perfect balance of comfort and the wilderness.", size: "square" },
+  { src: "regenerated images/Post-processing_overhaul_for_202604081951.jpeg", alt: "Golden hour paints the estate in warm hues.", size: "tall" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.48 PM.jpeg", alt: "Your personal sanctuary away from the world.", size: "wide" },
+  { src: "regenerated images/This_image_needs_202604081634.png", alt: "Thoughtful design that respects the landscape.", size: "tall" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.49 PM (1).jpeg", alt: "Uncompromising elegance in every little detail.", size: "square" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.50 PM.jpeg", alt: "Gentle sunlight dancing through the towering trees.", size: "tall" },
+  { src: "regenerated images/Post-processing_overhaul_for_202604082027.jpeg", alt: "Curated touches that make you feel truly at home.", size: "wide" },
+  { src: "img/WhatsApp Image 2026-04-08 at 3.58.52 PM (1).jpeg", alt: "Twilight whispers descending through the silent valley.", size: "square" },
+  { src: "regenerated images/Post-processing_overhaul_for_202604082002 (1).jpeg", alt: "Peaceful evenings underneath a canopy of undisturbed stars.", size: "tall" }
 ];
 
 export default function Gallery() {
@@ -53,7 +53,7 @@ export default function Gallery() {
             transition={{ delay: 0.2 }}
             className="text-gray-400 font-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
           >
-            A curated gallery merging original captures and enhanced visualizations of FIG & SHADE, reflecting our breathtaking environment.
+            Explore the quiet beauty of our retreat. Every frame tells a story of architectural elegance meeting untamed nature in the heart of the Wayanad hills.
           </motion.p>
         </div>
 
@@ -72,7 +72,7 @@ export default function Gallery() {
               `}
             >
               <img 
-                src={`/api/media?path=${encodeURIComponent(img.src)}`}
+                src={`/${img.src}`}
                 alt={img.alt}
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100"

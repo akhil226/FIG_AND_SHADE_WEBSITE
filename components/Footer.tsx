@@ -29,14 +29,14 @@ export default function Footer() {
           <ul className="text-gray-400 text-sm space-y-3">
             <li>Sulthan Bathery, Wayanad</li>
             <li>Kerala, India</li>
-            <li><a href="mailto:reservations@figandshade.com" className="hover:text-[#c5a059] transition-colors">reservations@figandshade.com</a></li>
+            <li><a href="mailto:figandshade@gmail.com" className="hover:text-[#c5a059] transition-colors">figandshade@gmail.com</a></li>
             <li><a href="tel:+919847811838" className="hover:text-[#c5a059] transition-colors">+91 9847811838</a></li>
           </ul>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto text-center text-gray-600 text-xs border-t border-white/10 pt-8">
-        &copy; {new Date().getFullYear()} FIG & SHADE. Designed for serenity. All rights reserved.
+        &copy; {new Date().getFullYear()} FIG & SHADE.Rooted in the hills of Sulthan Bathery. Under the shade, above the clouds. All rights reserved.
       </div>
     </footer>
   );

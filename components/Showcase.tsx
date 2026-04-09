@@ -32,29 +32,29 @@ export default function Showcase() {
             >
               {/* Animated Background Image */}
               <div className="absolute inset-0">
-                 <img 
-                   src={`/api/media?path=${encodeURIComponent(room.coverImage)}`} 
-                   alt={room.title}
-                   className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
-                 />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+                <img
+                  src={`/${room.coverImage}`}
+                  alt={room.title}
+                  className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
               </div>
 
               {/* Content */}
               <div className="relative z-10 [transform:translateZ(50px)] transition-transform duration-500 group-hover:translate-y-[-10px]">
-                 <div className="flex items-center gap-3 mb-3">
-                    {icons[room.slug]}
-                    <h3 className="font-serif text-2xl text-white">{room.title}</h3>
-                 </div>
-                 <p className="text-gray-300 text-sm leading-relaxed">{room.shortDesc}</p>
-                 
-                 <div 
-                   className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[#c5a059] text-sm uppercase tracking-wider font-semibold inline-block"
-                 >
-                   Explore {room.title} &rarr;
-                 </div>
+                <div className="flex items-center gap-3 mb-3">
+                  {icons[room.slug]}
+                  <h3 className="font-serif text-2xl text-white">{room.title}</h3>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed">{room.shortDesc}</p>
+
+                <div
+                  className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[#c5a059] text-sm uppercase tracking-wider font-semibold inline-block"
+                >
+                  Explore {room.title} &rarr;
+                </div>
               </div>
-              
+
               {/* Hover splash effect */}
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#c5a059]/30 rounded-2xl transition-colors duration-500 pointer-events-none" />
             </motion.div>

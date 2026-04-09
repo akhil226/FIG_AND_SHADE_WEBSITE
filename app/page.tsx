@@ -4,6 +4,7 @@ import Showcase from '@/components/Showcase';
 import Gallery from '@/components/Gallery';
 import VideoSection from '@/components/VideoSection';
 import Footer from '@/components/Footer';
+import Chatbot from '@/components/Chatbot';
 
 export default function Home() {
   return (
@@ -33,6 +34,9 @@ export default function Home() {
       />
 
       <Footer />
+      
+      {/* Global Interactive Elements */}
+      <Chatbot />
     </main>
   );
 }

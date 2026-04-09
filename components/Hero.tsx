@@ -18,7 +18,7 @@ export default function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover mt-[3%]"
-          src="/api/media?path=animations/logointro.mp4"
+          src="/animations/logointro.mp4"
         />
       </motion.div>
 

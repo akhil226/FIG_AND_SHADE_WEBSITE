@@ -48,7 +48,7 @@ export default function VideoSection({ videos, title, subtitle, reverse }: Video
               muted 
               playsInline 
               className="absolute inset-0 w-full h-full object-cover"
-              src={`/api/media?path=animations/${video}`}
+              src={`/animations/${video}`}
             />
           </motion.div>
         ))}

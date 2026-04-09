@@ -42,7 +42,7 @@ export default function SpaceClient({ slug }: { slug: string }) {
             muted
             playsInline
             className="w-full h-full object-cover scale-105"
-            src={`/api/media?path=animations/${space.videoUrl}`}
+            src={`/animations/${space.videoUrl}`}
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/50 to-[#0a0a0a]" />
@@ -101,7 +101,7 @@ export default function SpaceClient({ slug }: { slug: string }) {
               className="relative rounded-2xl overflow-hidden cursor-pointer group break-inside-avoid"
             >
               <img 
-                src={`/api/media?path=${encodeURIComponent(imgSrc)}`}
+                src={`/${imgSrc}`}
                 alt={`${space.title} view ${i}`}
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100"
                 style={{ aspectRatio: i % 3 === 0 ? '4/5' : '16/9' }}
