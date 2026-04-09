@@ -14,9 +14,11 @@ export default function Navbar() {
       </div>
       
       {/* Reduced width and overall size for compact, clean look */}
-      <button className="bg-[#c5a059] text-black font-semibold px-5 py-2 text-sm rounded-full transition-all hover:bg-white hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]">
-        Find FIG & SHADE
-      </button>
+      <a href="https://maps.app.goo.gl/TxX2rrGBQvXE7dhD6" target="_blank" rel="noopener noreferrer">
+        <button className="bg-[#c5a059] text-black font-semibold px-5 py-2 text-sm rounded-full transition-all hover:bg-white hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]">
+          Find FIG & SHADE
+        </button>
+      </a>
     </motion.nav>
   );
 }

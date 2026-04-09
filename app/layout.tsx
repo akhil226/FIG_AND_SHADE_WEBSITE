@@ -8,6 +8,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   title: 'FIG & SHADE | Premium Hill Retreat in Wayanad',
   description: 'Experience a serene hill retreat at FIG & SHADE. Luxury homestay in Sulthan Bathery, Wayanad, Kerala. Book your stay for a cinematic escape.',
+  metadataBase: new URL('https://figandshade.com'),
 };
 
 export default function RootLayout({
