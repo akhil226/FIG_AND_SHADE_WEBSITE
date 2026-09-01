@@ -30,7 +30,7 @@ export default function Footer() {
             <li>Sulthan Bathery, Wayanad</li>
             <li>Kerala, India</li>
             <li><a href="mailto:figandshade@gmail.com" className="hover:text-[#c5a059] transition-colors">figandshade@gmail.com</a></li>
-            <li><a href="tel:+919847811838" className="hover:text-[#c5a059] transition-colors">+91 9847811838</a></li>
+            <li><a href="tel:+917907911838" className="hover:text-[#c5a059] transition-colors">+91 7907911838</a></li>
           </ul>
         </div>
       </div>

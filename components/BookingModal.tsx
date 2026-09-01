@@ -20,7 +20,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Hardcoded owner number
-  const OWNER_WHATSAPP = "919847811838";
+  const OWNER_WHATSAPP = "917907911838";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
